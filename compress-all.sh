@@ -1,0 +1,2 @@
+find . -name '*.jpg' -exec sh -c 'imagemin "$0" "--plugin.webp.quality=82 --plugin.webp.preset=default" > "$0.webp"'  {} \; 
+find . -name '*.png' -exec sh -c 'imagemin "$0" "--plugin.webp.quality=82 --plugin.webp.preset=default" > "$0.webp"'  {} \; 
